@@ -1,0 +1,471 @@
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10000;
+    background-color: #6f6c95;
+  }
+  
+  header .logo {
+    color: #e9ddf1;
+    font-weight: 300;
+    text-decoration: none;
+    font-size: 1.5em;
+    text-transform: uppercase; 
+    letter-spacing: 1px; 
+    text-align: center;
+  }
+
+
+body {
+   background-image: url('Gambar/BG.jpeg'); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+ 
+  .black-rectangle {
+    width: 100%;
+    height: 50px;
+    background-color: black;
+  }
+  
+  .top {
+    position: fixed;
+    top: 0;
+  }
+  
+  .bottom {
+    position: fixed;
+    bottom: 0;
+  }
+  
+  .purple-box {
+    background-color: #e9ddf1;
+    border: 2px solid black;
+    border-radius: 100px;
+    padding: 20px;
+    margin: 60px auto 20px auto; /* Center the purple box horizontally */
+    max-width: 80%; /* Limit the width */
+  }
+  
+  .purple-box h1 {
+    text-align: center;
+    font-size: 2em; /* Larger font size */
+  }
+  
+  .purple-box p {
+    text-align: justify; /* Justify text */
+  }
+  
+  .pink-boxes {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+  }
+  
+  .pink-box {
+    width: 150px;
+    height: 100px;
+    border-radius: 20px;
+    background-color: pink;
+    text-align: center;
+    line-height: 100px;
+    cursor: pointer;
+    overflow: hidden; /* Hide overflowing text */
+  }
+  
+  .background-images img {
+    position: absolute;
+    width: 200px;
+    opacity: 0.6;
+  }
+  
+  .popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .popup img {
+    max-width: 100%;
+    max-height: 100%;
+  }
+
+  .footer-icons {
+    bottom: 0;
+    left: 0;
+    background-color: #6f6c95;
+    background: #6f6c95;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .footer-icons a {
+    margin-right: 20px;
+    color: #ffffff; /* Warna default untuk tautan */
+    text-decoration: none;
+  }
+  
+  .footer-icons a:hover {
+    color: #ffffff; /* Warna saat tautan dihover */
+  }
+  
+  
+  header ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .youtube-video {
+    text-align: center;
+    background: #1c052200;
+  }
+
+  .additional-box {
+    width: 100%;    
+    text-align: center;
+    margin-top: 10px;
+    align-items: center;
+  }
+  
+  .carousel-item {
+    height: 50vh; /* Fullscreen */
+    /* Or set to a specific height, e.g., height: 500px; */
+  }
+  
+  .carousel-item img {
+    height: 100%;
+    object-fit: cover;
+  }
+  
+
+  .slider_section {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    color: #ffffff;
+  }
+  
+  .slider_section #carouselExampleIndicators {
+    width: 100%;
+  }
+  
+  .slider_section .row {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  
+  .slider_section .box {
+    margin: 125px 0;
+  }
+  
+  .slider_section .detail-box {
+    text-align: center;
+  }
+  
+  .slider_section .detail-box h1,
+  .slider_section .detail-box h2,
+  .slider_section .detail-box h3 {
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+  
+  .slider_section .detail-box h2 {
+    font-size: 2.5rem;
+  }
+  
+  .slider_section .detail-box h1 {
+    font-size: 3.5rem;
+    font-weight: bold;
+    letter-spacing: .5rem;
+  }
+  
+  .slider_section .detail-box p {
+    margin-top: 25px;
+  }
+  
+  .slider_section .detail-box a {
+    display: inline-block;
+    padding: 8px 35px;
+    background-color: transparent;
+    border: 1.5px solid #ffffff;
+    color: #ffffff;
+    border-radius: 0px;
+    -webkit-transition: -webkit-transform 0.3s;
+    transition: -webkit-transform 0.3s;
+    transition: transform 0.3s;
+    transition: transform 0.3s, -webkit-transform 0.3s;
+    text-transform: uppercase;
+    margin-top: 35px;
+  }
+  
+  .slider_section .detail-box a:hover {
+    background-color: #ffffff;
+    color: #000000;
+  }
+  
+  .slider_section #carouselExampleIndicators .carousel-indicators {
+    position: unset;
+    margin: 0;
+    margin-top: 45px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  
+  .slider_section #carouselExampleIndicators .carousel-indicators li {
+    width: 14px;
+    height: 14px;
+    background-color: transparent;
+    border: 2px solid #ffffff;
+    border-radius: 100%;
+    opacity: 1;
+  }
+  
+  .slider_section #carouselExampleIndicators .carousel-indicators li.active {
+    border: 4px solid #ffffff;
+  }
+
+  .sub-box1 {
+    margin: 20px;
+    width: 200px;
+    height: 50px;
+    background-color: #d4bd69;
+    border: 2px solid black;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .sub-box2 {
+    margin: 60px auto 20px auto;
+    width: 200px;
+    height: 50px;
+    background-color: #d4bd69;
+    border: 2px solid black;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .background-images {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    overflow: hidden;
+}
+
+.background-images {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  overflow: hidden;
+}
+
+.floating-image {
+  position: absolute;
+  width: 100px; /* Adjust the size as needed */
+  opacity: 0.6;
+  transition: transform 0.5s ease-in-out; /* Add smooth transition effect */
+}
+
+.image1 {
+  animation: sway1 3s ease-in-out infinite alternate;
+}
+
+.image2 {
+  animation: sway2 2s ease-in-out infinite alternate;
+}
+
+.image3 {
+  animation: sway3 4s ease-in-out infinite alternate;
+}
+
+.image4 {
+  animation: sway4 1.5s ease-in-out infinite alternate;
+}
+
+.image5 {
+  animation: sway5 2.5s ease-in-out infinite alternate;
+}
+
+.image6 {
+  animation: sway5 4.5s ease-in-out infinite alternate;
+}
+
+.image7 {
+  animation: sway5 3.0s ease-in-out infinite alternate;
+}
+
+.image8 {
+  animation: sway5 3.5s ease-in-out infinite alternate;
+}
+
+.image9 {
+  animation: sway5 0.5s ease-in-out infinite alternate;
+}
+
+@keyframes sway1 {
+  0% {
+      transform: translateY(0);
+  }
+
+  100% {
+      transform: translateY(20px); /* Adjust the sway amount as needed */
+  }
+}
+
+@keyframes sway2 {
+  0% {
+      transform: translateY(0);
+  }
+
+  100% {
+      transform: translateY(15px); /* Adjust the sway amount as needed */
+  }
+}
+
+@keyframes sway3 {
+  0% {
+      transform: translateY(0);
+  }
+
+  100% {
+      transform: translateY(25px); /* Adjust the sway amount as needed */
+  }
+}
+
+@keyframes sway4 {
+  0% {
+      transform: translateY(0);
+  }
+
+  100% {
+      transform: translateY(10px); /* Adjust the sway amount as needed */
+  }
+}
+
+@keyframes sway5 {
+  0% {
+      transform: translateY(0);
+  }
+
+  100% {
+      transform: translateY(5px); /* Adjust the sway amount as needed */
+  }
+}
+
+@keyframes sway6 {
+  0% {
+      transform: translateY(0);
+  }
+
+  100% {
+      transform: translateY(50px); /* Adjust the sway amount as needed */
+  }
+}
+
+@keyframes sway7 {
+  0% {
+      transform: translateY(0);
+  }
+
+  100% {
+      transform: translateY(35px); /* Adjust the sway amount as needed */
+  }
+}
+@keyframes sway8 {
+  0% {
+      transform: translateY(0);
+  }
+
+  100% {
+      transform: translateY(45px); /* Adjust the sway amount as needed */
+  }
+}
+
+@keyframes sway9 {
+  0% {
+      transform: translateY(0);
+  }
+
+  100% {
+      transform: translateY(40px); /* Adjust the sway amount as needed */
+  }
+}
+
+
+/* Additional styles to adjust the initial positions */
+.image1 {
+  left: 100px;
+  top: 15px;
+}
+
+.image2 {
+  left: 1150px;
+  top: 200px;
+}
+
+.image3 {
+  left: 5px;
+  top: 500px;
+}
+
+.image4 {
+  left: 350px;
+  top: 300px;
+}
+
+.image5 {
+  left: 1000px;
+  top: 550px;
+}
+
+.image6 {
+  left: 600px;
+  top: 5px;
+}
+
+.image7 {
+  left: 700px;
+  top: 800px;
+}
+
+.image8 {
+  left: 1350px;
+  top: 450px;
+}
+
+.image9 {
+  left: 600px;
+  top: 450px;
+}
+
+  /* Add your existing styles here */
